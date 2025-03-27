@@ -19,6 +19,7 @@ class EmployeeRecyclerViewAdapter(
             val fName = view.findViewById<TextView>(R.id.firstName)
             val mName = view.findViewById<TextView>(R.id.middleName)
             val lName = view.findViewById<TextView>(R.id.lastName)
+            val job = view.findViewById<TextView>(R.id.job)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -38,6 +39,7 @@ class EmployeeRecyclerViewAdapter(
         holder.fName.setText(item.firstName)
         holder.mName.setText(item.middleName)
         holder.lName.setText(item.lastName)
+        holder.job.setText(item.job)
 
         holder.itemView.setOnClickListener{
             onClick(item)

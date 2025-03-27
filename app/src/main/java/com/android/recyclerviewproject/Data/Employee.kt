@@ -3,7 +3,7 @@ package com.android.recyclerviewproject.Data
 import com.android.recyclerviewproject.R
 
 data class Employee(
-    var id: String = "",
+    var job: String = "",
     var firstName: String = "",
     var middleName: String = "",
     var lastName: String = "",
